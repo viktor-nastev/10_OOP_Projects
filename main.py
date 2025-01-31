@@ -1,4 +1,8 @@
 from greets import greetings
+from translate import Translator
+
+translator = Translator(to_lang='pt')
 
 for g in greetings:
-    print(g.title())
+    print(g.title() + '-xxx-')
+    print(translator.translate(g).title())
